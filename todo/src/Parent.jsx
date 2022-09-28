@@ -18,7 +18,8 @@ export class Parent extends Component {
           name: "sadhna",
           age: 20
          },
-         count: 0
+         count: 0,
+         names: ["alia", "deepika", "aunshka", "kiara"] // passing array in state
       }
     }
 
@@ -50,6 +51,16 @@ export class Parent extends Component {
         
         {this.state.count % 2 === 0 ? <Even/> : <Odd/>}    //conditional render
         {this.state.count>0 && <p>count is greater than 0</p>}
+
+        {this.state.names.map(
+          (name) => 
+          name !== "alia" && (
+            <>
+          <p>{name} is a heroine from bolywood</p>
+          <h1>this is a bollywood collection</h1>
+          </>
+          ))
+          }
 
         {/* <Even/> */}
         {/* <Child parentText = {this.state.parentText} />  */}
