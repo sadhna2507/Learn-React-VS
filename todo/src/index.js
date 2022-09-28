@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import {App} from './App';
 import { Parent } from './Parent'
+import { Greetings } from './components/Greetings';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,7 +13,8 @@ root.render(
     {/* <App name = "Harry Potter - Normal tag">
       <h2>head tag inside app</h2>
     </App> */}
-    <Parent/>
+    {/* <Parent/> */}
+    <Greetings/>  
   </React.StrictMode>
 );
 
