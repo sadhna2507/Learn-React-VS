@@ -4,6 +4,7 @@ import './index.css';
 import {App} from './App';
 import { Parent } from './Parent'
 import { Greetings } from './components/Greetings';
+import { Name } from './components/Name';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,7 +15,8 @@ root.render(
       <h2>head tag inside app</h2>
     </App> */}
     {/* <Parent/> */}
-    <Greetings/>  
+    {/* <Greetings/>   */}
+    <Name/>
   </React.StrictMode>
 );
 
