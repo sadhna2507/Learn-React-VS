@@ -2,15 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import {App} from './App';
+import { Parent } from './Parent'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App name = "Harry Potter - Self closed"/>
+    {/* <App name = "Harry Potter - Self closed"/> */}
     {/* <App name = "Harry Potter - Normal tag">
       <h2>head tag inside app</h2>
     </App> */}
+    <Parent/>
   </React.StrictMode>
 );
 
