@@ -5,6 +5,7 @@ import {App} from './App';
 import { Parent } from './Parent'
 import { Greetings } from './components/Greetings';
 import { Name } from './components/Name';
+import { LifeCycle } from './components/LifeCycle';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,7 +17,8 @@ root.render(
     </App> */}
     {/* <Parent/> */}
     {/* <Greetings/>   */}
-    <Name/>
+    {/* <Name/> */}
+    <LifeCycle/>
   </React.StrictMode>
 );
 
