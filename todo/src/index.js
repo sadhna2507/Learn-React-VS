@@ -8,6 +8,7 @@ import { Name } from './components/Name';
 import { LifeCycle } from './components/LifeCycle';
 import { ParentLifeCycle } from './components/ParentLifeCycle';
 import { InstaMain } from './components/InstaMain';
+import { Form } from './components/Form';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -22,7 +23,8 @@ root.render(
     {/* <Name/> */}
     {/* <LifeCycle/> */}
     {/* <InstaMain/> */}
-    <ParentLifeCycle/>
+    {/* <ParentLifeCycle/> */}
+    <Form/>
   </React.StrictMode>
 );
 
