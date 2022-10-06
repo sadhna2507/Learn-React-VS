@@ -18,5 +18,5 @@ export class ErrorBoundary extends Component {
         </UIBackup>
       </>
     );
-  }
+    }
 }

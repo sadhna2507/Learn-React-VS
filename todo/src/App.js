@@ -11,7 +11,7 @@ export class App extends Component{
       <div>
         <h1>Title: {this.props.name} and the water bottle</h1>
         <p>story of a water bottle</p>
-        <Button text = "Delete"  btnClass = "delete"/>
+        {/* <Button text = "Delete"  btnClass = "delete"/> */}
         <Button text = "Save"  btnClass = "save"/>
       </div>
     )
