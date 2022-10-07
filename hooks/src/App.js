@@ -4,6 +4,7 @@ import { CountHooks } from "./components/CountHooks";
 import { StateWithArray } from "./components/StateWithArray";
 import { StateWithObject } from "./components/StateWithObject";
 import { TitleChangeClass } from "./components/TitleChangeClass";
+import { TitleChangeHooks } from "./components/TitleChangeHooks";
 
 export function App() {
   return (
@@ -13,7 +14,8 @@ export function App() {
       {/* <CounterHooks/> */}
       {/* <StateWithObject/> */}
       {/* <StateWithArray/> */}
-      <TitleChangeClass/> 
+      {/* <TitleChangeClass/> */}
+      <TitleChangeHooks/>
     </div>
   );
 }
