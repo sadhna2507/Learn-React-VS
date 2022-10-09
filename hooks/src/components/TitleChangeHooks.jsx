@@ -3,6 +3,12 @@ import React, { useState, useEffect} from 'react'
 export function TitleChangeHooks() {
     const[count, setCount] = useState(0);
     const[name, setName] = useState('');
+
+
+    const changeCount = () => {
+      setCount((prev) => prev + 1);
+    };
+
     
 
     // useEffect(()=> {
