@@ -5,6 +5,7 @@ import { StateWithArray } from "./components/StateWithArray";
 import { StateWithObject } from "./components/StateWithObject";
 import { TitleChangeClass } from "./components/TitleChangeClass";
 import { TitleChangeHooks } from "./components/TitleChangeHooks";
+import Check from "./components/Check";
 
 export function App() {
   return (
@@ -15,7 +16,8 @@ export function App() {
       {/* <StateWithObject/> */}
       {/* <StateWithArray/> */}
       {/* <TitleChangeClass/> */}
-      <TitleChangeHooks/>
+      {/* <TitleChangeHooks/> */}
+      <Check />
     </div>
   );
 }
