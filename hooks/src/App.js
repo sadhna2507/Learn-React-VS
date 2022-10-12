@@ -5,9 +5,11 @@ import { StateWithArray } from "./components/StateWithArray";
 import { StateWithObject } from "./components/StateWithObject";
 import { TitleChangeClass } from "./components/TitleChangeClass";
 import { TitleChangeHooks } from "./components/TitleChangeHooks";
+import React, { useState } from "react";
 import Check from "./components/Check";
 
 export function App() {
+  const [valid, setValid] = useState(0);
   return (
     <div>
       {/* <CountClass/> */}
@@ -17,7 +19,10 @@ export function App() {
       {/* <StateWithArray/> */}
       {/* <TitleChangeClass/> */}
       {/* <TitleChangeHooks/> */}
-      <Check />
+      {valid < 10 && <Check />}
+      <button onClick={() => setValid((prev) => prev + 1)}>
+        Click = {valid}
+      </button>
     </div>
   );
 }
