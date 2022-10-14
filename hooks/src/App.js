@@ -7,6 +7,7 @@ import { TitleChangeClass } from "./components/TitleChangeClass";
 import { TitleChangeHooks } from "./components/TitleChangeHooks";
 import React, { useState } from "react";
 import Check from "./components/Check";
+import { RefExample } from "./components/RefExample";
 
 export function App() {
   const [valid, setValid] = useState(0);
@@ -19,10 +20,11 @@ export function App() {
       {/* <StateWithArray/> */}
       {/* <TitleChangeClass/> */}
       {/* <TitleChangeHooks/> */}
-      {valid < 10 && <Check />}
-      <button onClick={() => setValid((prev) => prev + 1)}>
-        Click = {valid}
-      </button>
+      {/* {valid < 10 && <Check />} */}
+      {/* <button onClick={() => setValid((prev) => prev + 1)}> */}
+      {/* Click = {valid} */}
+      {/* </button> */}
+      <RefExample />
     </div>
   );
 }
