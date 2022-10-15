@@ -8,10 +8,16 @@
 // import Check from "./components/Check";
 // import { RefExample } from "./components/RefExample";
 import React, { useState } from "react";
-import { DataFetch } from "./components/DataFetch";
+// import { DataFetch } from "./components/DataFetch";
+import { ComponentA } from "./components/ComponentA";
+
+
+export const NameContext = React.createContext();
 
 export function App() {
-  const [valid, setValid] = useState(0);
+  // const [valid, setValid] = useState(0);
+  const [name, setName] = useState('sadhna')
+
   return (
     <div>
       {/* <CountClass/> */}
@@ -26,7 +32,11 @@ export function App() {
       {/* Click = {valid} */}
       {/* </button> */}
       {/* <RefExample /> */}
-      <DataFetch />
+      {/* <DataFetch /> */}
+
+      <NameContext.Provider value={name}>
+        <ComponentA />
+      </NameContext.Provider>
     </div>
   );
 }
