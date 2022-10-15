@@ -7,16 +7,16 @@
 // import { TitleChangeHooks } from "./components/TitleChangeHooks";
 // import Check from "./components/Check";
 // import { RefExample } from "./components/RefExample";
-import React, { useState } from "react";
+// import React, { useState } from "react";
 // import { DataFetch } from "./components/DataFetch";
-import { ComponentA } from "./components/ComponentA";
+// import { ComponentA } from "./components/ComponentA";
+import { ReducerCounter } from "./components/ReducerCounter";
 
-
-export const NameContext = React.createContext();
+// export const NameContext = React.createContext();
 
 export function App() {
   // const [valid, setValid] = useState(0);
-  const [name, setName] = useState('sadhna')
+  // const [name, setName] = useState('sadhna')
 
   return (
     <div>
@@ -34,9 +34,11 @@ export function App() {
       {/* <RefExample /> */}
       {/* <DataFetch /> */}
 
-      <NameContext.Provider value={name}>
+      {/* <NameContext.Provider value={name}>
         <ComponentA />
-      </NameContext.Provider>
+      </NameContext.Provider> */}
+
+      <ReducerCounter />
     </div>
   );
 }
