@@ -10,7 +10,11 @@
 // import React, { useState } from "react";
 // import { DataFetch } from "./components/DataFetch";
 // import { ComponentA } from "./components/ComponentA";
-import { MemoCounter } from "./components/MemoCounter";
+import { CounterOne } from "./components/CounterOne";
+import { CounterTwo } from "./components/CounterTwo";
+// import { DocTitleOne } from "./components/DocTitleOne";
+// import { DocTitleTwo } from "./components/DocTitleTwo";
+// import { MemoCounter } from "./components/MemoCounter";
 // import { ReducerCounter } from "./components/ReducerCounter";
 
 // export const NameContext = React.createContext();
@@ -40,7 +44,11 @@ export function App() {
       </NameContext.Provider> */}
 
       {/* <ReducerCounter /> */}
-      <MemoCounter/>
+      {/* <MemoCounter/> */}
+      {/* <DocTitleOne /> */}
+      {/* <DocTitleTwo /> */}
+      <CounterOne />
+      <CounterTwo />
     </div>
   );
 }
