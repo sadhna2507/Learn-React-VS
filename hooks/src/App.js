@@ -10,7 +10,8 @@
 // import React, { useState } from "react";
 // import { DataFetch } from "./components/DataFetch";
 // import { ComponentA } from "./components/ComponentA";
-import { ReducerCounter } from "./components/ReducerCounter";
+import { MemoCounter } from "./components/MemoCounter";
+// import { ReducerCounter } from "./components/ReducerCounter";
 
 // export const NameContext = React.createContext();
 
@@ -38,7 +39,8 @@ export function App() {
         <ComponentA />
       </NameContext.Provider> */}
 
-      <ReducerCounter />
+      {/* <ReducerCounter /> */}
+      <MemoCounter/>
     </div>
   );
 }
