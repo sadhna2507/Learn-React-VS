@@ -10,12 +10,21 @@
 // import React, { useState } from "react";
 // import { DataFetch } from "./components/DataFetch";
 // import { ComponentA } from "./components/ComponentA";
-import { CounterOne } from "./components/CounterOne";
-import { CounterTwo } from "./components/CounterTwo";
+// import { CounterOne } from "./components/CounterOne";
+// import { CounterTwo } from "./components/CounterTwo";
 // import { DocTitleOne } from "./components/DocTitleOne";
 // import { DocTitleTwo } from "./components/DocTitleTwo";
 // import { MemoCounter } from "./components/MemoCounter";
 // import { ReducerCounter } from "./components/ReducerCounter";
+
+import { Home } from "./components/Routing.jsx/Home";
+import { About } from "./components/Routing.jsx/About";
+import { Contact } from "./components/Routing.jsx/Contact";
+import { Content } from "./components/Routing.jsx/Content";
+import { Sidebar } from "./components/Routing.jsx/Sidebar";
+import { Routes, Route } from "react-router-dom";
+import { Header } from "./components/Routing.jsx/Header";
+import { ErrorPage } from "./components/Routing.jsx/ErrorPage";
 
 // export const NameContext = React.createContext();
 
@@ -47,8 +56,28 @@ export function App() {
       {/* <MemoCounter/> */}
       {/* <DocTitleOne /> */}
       {/* <DocTitleTwo /> */}
-      <CounterOne />
-      <CounterTwo />
+      {/* <CounterOne /> */}
+      {/* <CounterTwo /> */}
+
+      {/* <h1>Router</h1> */}
+
+      <Routes>
+        <Route path="/about" element={<Sidebar />} />
+      </Routes>
+
+      <Routes>
+        <Route path="/contact" element={<Sidebar />} />
+      </Routes>
+
+      <Header />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about/:id" element={<Content />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
     </div>
   );
 }
