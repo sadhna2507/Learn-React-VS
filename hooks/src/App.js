@@ -1,3 +1,4 @@
+import "./App.css";
 // import { CountClass } from "./components/CountClass";
 // import { CounterHooks } from "./components/CounterHooks";
 // import { CountHooks } from "./components/CountHooks";
@@ -62,11 +63,11 @@ export function App() {
       {/* <h1>Router</h1> */}
 
       <Routes>
-        <Route path="/about" element={<Sidebar />} />
+        <Route path="/about" element={<Sidebar text="about" />} />
       </Routes>
 
       <Routes>
-        <Route path="/contact" element={<Sidebar />} />
+        <Route path="/contact" element={<Sidebar text="contact" />} />
       </Routes>
 
       <Header />
